@@ -13,4 +13,8 @@ class Car extends Model
     public function reviews() {
         return $this->hasMany('App\Models\Review');
     }
+
+    public function gadgets(){
+        return $this->belongsToMany('App\Models\Gadget');
+    }
 }

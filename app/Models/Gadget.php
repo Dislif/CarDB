@@ -9,5 +9,9 @@ class Gadget extends Model
 {
     use HasFactory;
 
-    protected $fillable=['nome', 'car_id'];
+    protected $fillable=['nome'];
+
+    public function cars(){
+        return belongsToMany('App\Models\Car');
+    }
 }
