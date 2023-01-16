@@ -23,12 +23,10 @@ label {
     color: #737373;
 }
 
-.lbl-txt-rev {
-    margin-top: 30px;
-    margin-left: 25px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    color: #737373;
+.p-3-custom{    
+    padding-top: 1rem !important;
+    padding-left: 1rem !important;
+    padding-bottom: 1rem !important;
 }
 
 img {
@@ -44,6 +42,7 @@ img {
 .sec {
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
 }
 
 .createbtn {
@@ -57,20 +56,41 @@ img {
     justify-content: space-between;
 }
 
+.optionals {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.secrev{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
 .rev {
     width: 250px;
     margin: 10px;
 }
-.putrev {
-    width: 435px;
+.revs {
+    display: flex;
 }
 
-textarea {
-    margin: 10px;
+.putrev {
+    width: 435px;
+    position: sticky;
+    top: 33%;
 }
 
 .secv {
     display: flex;
-    //justify-content: flex-start;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#separator {
+    border-color: black;
+    border-style: dashed;
 }
